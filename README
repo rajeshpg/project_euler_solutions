@@ -1,1 +1,8 @@
-Solutions for peoblems listed in http://projecteuler.net
+Solutions for problems listed in http://projecteuler.net
+
+This is not only an attempt to find the solutions to the problems listed in http://projecteuler.net
+
+but to learn programming languages other than Java.
+
+Solutions can be found in Java and also in Ruby, Scala, Python(Clojure and some more languages like Haskell, Erlang to be added).
+ 
