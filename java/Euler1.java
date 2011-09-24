@@ -6,7 +6,7 @@ public class Euler1 {
 	 * eg: If we list all the natural numbers below 10 that are multiples of 3
 	 * or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 	 */
-	public static int sum() {
+	public static int solution() {
 		
 		int i = 0;
 		int result = 0;
@@ -22,7 +22,7 @@ public class Euler1 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(Euler1.sum());
+		System.out.println(Euler1.solution());
 	}
 	
 
