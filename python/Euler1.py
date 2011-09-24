@@ -7,9 +7,4 @@ we get 3, 5, 6 and 9. The sum of these multiples is 23.
 """
 
 def solution():
-    num = range(0, 1000)
-    result = 0
-    for n in num:
-        if((n % 3 == 0) or (n % 5 == 0)):
-                result += n
-    return result
+    return sum(num for num in range(0, 1000) if ((num % 3 == 0) or (num % 5 == 0)))
