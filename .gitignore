@@ -1,6 +1,7 @@
-#java 
+#java class files
 *.class
 
 #general files
 *.swp #vi swap files
 
+#python class files
