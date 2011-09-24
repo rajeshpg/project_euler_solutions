@@ -1,0 +1,6 @@
+#java 
+*.class
+
+#general files
+*.swp #vi swap files
+
