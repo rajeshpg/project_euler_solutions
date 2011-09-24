@@ -5,3 +5,4 @@
 *.swp #vi swap files
 
 #python class files
+*.pyc
