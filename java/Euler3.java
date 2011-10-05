@@ -10,18 +10,20 @@ public class Euler3 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		 System.out.println(largestPrimeFactor(600851475143L));
+		System.out.println(largestPrimeFactor(600851475143L));
 	}
 
 	public static Long largestPrimeFactor(long num) {
 		int div = 2;
 		while (true) {
-			if(num==div)
+			if (num == div)
 				return num;
 			else if (num % div == 0) {
 				num = num / div;
+			} else {
+				div++;
 			}
-			div++;
+
 		}
 	}
 
