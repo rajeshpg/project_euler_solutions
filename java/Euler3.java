@@ -16,11 +16,10 @@ public class Euler3 {
 			if (num == div)
 				return num;
 			else if (num % div == 0) {
-				num = num / div;
+				num /=  div;
 			} else {
 				div++;
 			}
-
 		}
 	}
 
