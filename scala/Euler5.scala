@@ -5,22 +5,13 @@
  * 
 */
 object Euler5 extends App {
-  
-  def solution():Unit = {
-    val res = Stream.from(1) takeWhile (evenlyDivisible(_)) last
-    
-    println(res)
-          
-  }
-  
-  def evenlyDivisible(num: Long, div: Long = 2): Boolean = {
-    if(div == 10 && num % div == 0)
-      return true
-      else if(num % div == 0)
-        return evenlyDivisible(num,div+1)
-   else return false;
-      
+
+  val gcd: (Int, Int) => Int = (a, b) => if (b == 0) a else gcd(b, a % b)
+  val lcm: (Int, Int) => Int = (a, b) => a * (b / gcd(a, b))
+
+  def solution(): Long = {
+    Stream.from(1) take(20) reduceLeft(lcm(_, _))
   }
 
-  solution
+  println(solution)
 }
