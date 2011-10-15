@@ -4,7 +4,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 """
 
 def solution():
-    pass
+    return reduce(lambda x,y: lcm(x,y), range(1,20))
                 
 def gcd(a,b):
     if(b==0):
