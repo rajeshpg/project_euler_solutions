@@ -27,4 +27,4 @@ class Euler4
 end
 
 
-Euler3.solution
+Euler4.solution
