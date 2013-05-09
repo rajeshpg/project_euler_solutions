@@ -11,7 +11,6 @@ object Euler4 extends App {
   }
 
   def isPalindrome(str: String): Boolean = {
-    val revStr = str.reverse;
-    return str.equals(revStr);
+    str equals str.reverse;
   }
 }
